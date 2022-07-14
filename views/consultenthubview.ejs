@@ -1,0 +1,57 @@
+<% include ./themes/head %>
+<body id="page-top">
+    <div id="wrapper">  
+            <% include ./themes/sidebar %>
+            <div id="content-wrapper" class="d-flex flex-column">
+                <div id="content" class="right-body">
+                        <% include ./themes/header %>
+                    <div class="container-fluid">
+                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                <h1 class="h3 mb-0 text-gray-800">welcome</h1>
+                            </div>
+                    <div class="search-panel mb-3">
+                        <% var search_param = ''; %>
+                        <% if(typeof search != 'undefined'){ %>
+                            <% search_param = search; %>
+                        <% } %>
+                        <div class="float-left mb-3">
+                            <form class="form-inline" method="GET" action="/admin/litters" >
+                                
+                               
+                                <input type="text" class="form-control mr-2" id="search" placeholder="Search for data" name="search" value="<%=  search_param %>" required>
+                                <button type="submit" name="submit" class="btn btn-wordLitter" value="Search" data-toggle="tooltip" title="Search"><i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                                
+                            </form>
+                        </div>
+                       
+                       
+                    </div>
+                        <div class="alert alert-success success-msg" style="display:none;" role="alert"></div>
+                        <div class="alert alert-danger err-msg" style="display:none;" role="alert"></div>
+                        
+                            <table class="table table-responsive" data-fl-scrolls>
+                                    <thead>
+                                        <th scope="col">company name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">phone no.</th>
+                                        <th scope="col">status</th>
+                                        <th scope="col">submitted on</th>
+                                    
+                                    </thead>
+                                   
+                            </table>
+
+
+
+                         
+                    </div>
+       
+    </div>
+    </div>
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+

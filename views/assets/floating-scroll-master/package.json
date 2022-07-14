@@ -1,0 +1,49 @@
+{
+  "name": "floating-scroll",
+  "version": "3.0.6",
+  "description": "A lightweight jQuery plugin providing floating scrollbar functionality",
+  "main": "dist/jquery.floatingscroll.min.js",
+  "module": "src/jquery.floatingscroll.js",
+  "style": "dist/jquery.floatingscroll.css",
+  "scripts": {
+    "lint": "eslint src/jquery.floatingscroll.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c && lessc src/jquery.floatingscroll.less | cleancss -c ie9 -O2 -o dist/jquery.floatingscroll.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amphiluke/floating-scroll.git"
+  },
+  "keywords": [
+    "scrollbar",
+    "widget",
+    "user-interface",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "Amphiluke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Amphiluke/floating-scroll/issues"
+  },
+  "homepage": "https://amphiluke.github.io/floating-scroll/",
+  "dependencies": {
+    "jquery": ">=1.4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "clean-css-cli": "^4.3.0",
+    "eslint": "^5.16.0",
+    "husky": "^2.4.0",
+    "less": "^3.9.0",
+    "rollup": "^1.14.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-terser": "^5.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}

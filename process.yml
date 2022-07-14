@@ -1,0 +1,8 @@
+apps:
+  - name: sample-project-nodejs
+    watch: false
+    script: npm
+    args: start
+    exec_mode: fork
+    env:
+      PORT: 8081

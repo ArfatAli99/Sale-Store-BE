@@ -1,0 +1,150 @@
+<% include ./themes/head %>
+<body id="page-top">
+    <div id="wrapper">  
+                <% include ./themes/sidebar %>
+            <div id="content-wrapper" class="d-flex flex-column">
+                    <% include ./themes/header %>
+               
+                <div id="content" class="admin-form right-body">
+                   <!-- Default form register -->
+                <form class="text-center border border-light p-5" action="" id="addAdminForm" method="POST">
+
+                        <p class="h4 mb-4">Register</p>
+                    
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- company name -->
+                                <input type="text" id="company_name" name="company_name" class="form-control" placeholder="Company name">
+                                <span id="company_name_error"></span>
+                            </div>
+                            <div class="col">
+                               
+                            company logo:  <input type="file" name="file" >
+                               
+                            </div>
+                        </div>
+                    
+                        <!-- phone no. -->
+                        
+                        <div class="mb-4">
+                            <input type="number" id="phone_number" name="phone_number" class="form-control" placeholder="Phone Number">
+                            <span id="phone_number_error"></span>
+                        </div>
+                        <div class="form-row mb-4">
+                                
+                                    <!-- facebook link -->
+                                    <input type="text" id="facebook_link" name="facebook_link"  class="form-control" placeholder="Facebook Link">
+                                    <span id="facebooklink_error"></span>
+                        </div>
+                        <div class="form-row mb-4">
+                                        <!--LinkedIn Link -->
+                                        <input type="text" id="LinkedIn_Link" name="LinkedIn_ Link" class="form-control" placeholder="LinkedIn Link">
+                                        <span id="LinkedIn_Link_error"></span>
+                                </div>
+                       
+
+                        <div class="mb-4">
+                            <input type="text" id="instagram_link" name="instagram_link" class="form-control" placeholder="Instragram link">
+                            <span id="instagram_link_error"></span>
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" id="website_link" name="website_link" class="form-control" placeholder="website link"  >
+                            <span id="website_link_error"></span>
+                        </div>
+                      
+
+                                <div class="mb-4">
+                                        <input type="text" id="Pinterest_Link" name="Pinterest_ Link" class="form-control" placeholder="Pinterest Link">
+                                        <span id="Pinterest_Link_error"></span>
+                                    </div>
+                                
+                                    <div class="mb-4">
+                                            <input type="number" id="Whatsapp_No" name="Whatsapp_No" class="form-control" placeholder="Whatsapp No">
+                                            <span id="Whatsapp_No_error"></span>
+                                        </div>
+
+                                        <div class="mb-4">
+                                                <input type="text" id="Company_profile" name="Company_profile" class="form-control" placeholder="Company profile">
+                                                <span id="Whatsapp_No_error"></span>
+                                            </div>
+                                            <div class="text-center">
+                          
+                                                    <h3 class="h3">Company Services</h3>        
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <input type="text" id="Service_name" name="Service_name" class="form-control" placeholder="Service Name">
+                                                <span id="Service_name_error"></span>
+                                            </div>
+                                         
+                           
+                                            <div class="mb-4">
+                                                    <input type="text" id="Service_Description" name="Service_Description" class="form-control" placeholder="Service Description">
+                                                    <span id="Service_Description_error"></span>
+                                                </div>
+                                                <p class="h4 mb-4">Engineers</p>
+
+                                            
+
+
+                                                <div class="form-row mb-4">
+                                                    <div class="col">
+                                                            <input type="text" id="name" name="name" class="form-control" placeholder=" Engineer Name">
+                                                            <span id="Engineer_Name_error"></span>
+                                                
+                                            </div>
+
+                                            <div class="col">
+                                                    <!-- Last name -->
+                                                Upload Cv:  <input type="file" name="file" >
+                                                   
+                                                </div>
+                                        </div>
+                                            <div class="form-row mb-4">
+                                                <!--LinkedIn Link -->
+                                                <input type="text" id="LinkedIn_Link" name="LinkedIn_ Link" class="form-control" placeholder="LinkedIn Link">
+                                                <span id="LinkedIn_Link_error"></span>
+                                        </div>
+                               
+
+                                            <div class="form-row mb-4">
+                                
+                                                <!-- facebook link -->
+                                                <input type="text" id="facebook_link" name="facebook_link"  class="form-control" placeholder="Facebook Link">
+                                                <span id="facebooklink_error"></span>
+                                    </div>
+
+
+
+                        <div class="mb-4">
+                            <input type="text" id="instagram_link" name="instagram_link" class="form-control" placeholder="Instragram link">
+                            <span id="instagram_link_error"></span>
+                        </div>
+
+
+                        <div class="text-center">
+                          
+                                <h3 class="h3">Previous Projects</h3>        
+                        </div>
+
+                        <div class="form-row mb-4">
+                                Upload photo:  <input type="file" name="file" >
+                                                   
+
+                            </div>
+
+
+
+
+                      
+                    
+                        
+                        <!-- Sign up button -->
+                        <div class="btn btn-info my-4 btn-block" onclick="adminFormValidation()">Submit</div>
+        
+                    </form>
+    <!-- Default form register -->
+                </div>
+            </div>
+    </div>
+     
